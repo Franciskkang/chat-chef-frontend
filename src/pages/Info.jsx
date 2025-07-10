@@ -47,7 +47,7 @@ const Info = () => {
           </form>
         </div>
         {/* END:form 영역 */}
-        {/* START:Add button 영역 */}
+        {/* START:Add 재료추가 button 영역 */}
         <AddButton onClick={addIngredient} />
         {/* END:Add button 영역 */}
         {/* START:Button 영역 */}
