@@ -1,11 +1,16 @@
 import React from "react";
 import Button from "../components/Button";
+import Title from "../components/Title";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   // logic
+  const history = useNavigate();
 
   const handleStart = () => {
     console.log("info페이지로 이동");
+    //infor page이동
+    history("/info");
   };
 
   // view
@@ -25,6 +30,11 @@ const Home = () => {
           </span>
         </div>
         {/* // TODO:Title 컴포넌트 */}
+        <Title
+          mainTittle={"맛있는쉐프타이틀"}
+          subTitle={"냉장고 레시피 나옴섭타이틀"}
+        />
+
         {/* START: Get Started라는 Button 영역 */}
         <Button
           text="Get started"
